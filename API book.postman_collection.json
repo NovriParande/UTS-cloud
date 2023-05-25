@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "9e8f2471-50b0-4df9-b5ea-e1ed993e90da",
+		"name": "API book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25306490"
+	},
+	"item": [
+		{
+			"name": "GET BOOKS BY ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE BOOKS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "coba lagi",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "saya",
+							"type": "text"
+						},
+						{
+							"key": "publisher",
+							"value": "sayaa",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "234",
+							"type": "text"
+						},
+						{
+							"key": "published_year",
+							"value": "2023",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/testAPI/restapi-book1.php?function=update_books&id=14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"testAPI",
+						"restapi-book1.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "update_books"
+						},
+						{
+							"key": "id",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BOOKS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/testAPI/restapi-book1.php?function=get_books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"testAPI",
+						"restapi-book1.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "get_books"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "7",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/testAPI/restapi-book.php?function=deletedata&id=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"testAPI",
+						"restapi-book.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "deletedata"
+						},
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST BOOK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "buku baru",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "sayaa",
+							"type": "text"
+						},
+						{
+							"key": "publisher",
+							"value": "sayaa",
+							"type": "text"
+						},
+						{
+							"key": "isbn",
+							"value": "2611",
+							"type": "text"
+						},
+						{
+							"key": "published_year",
+							"value": "2023",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/testAPI/restapi-book1.php?function=insert_books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"testAPI",
+						"restapi-book1.php"
+					],
+					"query": [
+						{
+							"key": "function",
+							"value": "insert_books"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
