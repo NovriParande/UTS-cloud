@@ -1,0 +1,30 @@
+.container {
+  background-color: rgb(255, 255, 255, 0.5);
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 15px;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#video-content {
+  position: relative;
+  z-index: 1;
+}
+
+button[type="submit"]:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+
+a:hover {
+  transition: color 0.3s ease;
+  transform: scale(1.2);
+
+}

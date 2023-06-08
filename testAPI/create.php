@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="css/style.css">
     <!--MENGHUBUNGKAN SYNTAX KE BOOSTRAP  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Masukkan data profil</title>
+    <title>Insert data books</title>
     <body>
+    <div id="video-background">
+		<video autoplay muted loop>
+			<source src="video/bg1.mp4" type="video/mp4">
+		</video>
+	</div>
     <!-- FORM INPUT/TAMBAH DATA -->
     <div class="container">
-        <center><h1>Tambah data Perusahaan</h1></center>
+        <center><h1>Insert data books</h1></center>
         <form action="create.php" method="POST" style="margin-top: 20px;"> 
         
         <div class="row mb-3">
@@ -44,8 +50,11 @@
             </div>
         </div>
         
-
-        <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
+        <center>
+            <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>
+            <a href="read.php" type="button" class="btn btn-success">Back to Home</a>
+        </center>
+        
         </form>
     </div>
 

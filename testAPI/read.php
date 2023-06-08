@@ -4,16 +4,24 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="css/style.css">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-        <title>READ PROFIL</title>
+        
+        <title>home</title>
+        <style>
+            
+        </style>
     </head>
     <body>
+        <div id="video-background">
+		<video autoplay muted loop>
+			<source src="video/bg1.mp4" type="video/mp4">
+		</video>
+	</div>
         <div class="container">
-            <h2 style="margin-top: 20px;">Data Buku Perpustakaan</h2>         
-            <a href="create.php" type="button" class="btn btn-primary">TAMBAH DATA </a> 
+            <h2 style="margin-top: 20px; ">Data Buku Perpustakaan</h2>         
+            <a href="create.php" type="button" class="btn btn-primary">Add Books</a> 
             <br/>
             <br/>
 
@@ -41,8 +49,8 @@
                             <td><?php echo $d['isbn']; ?></td>
                             <td><?php echo $d['published_year']; ?></td>
                             <td>
-                                <a href="edit.php?id=<?php echo $d['id']; ?>"type="button" class="btn btn-success">EDIT</a>
-                                <a href="delete.php?id=<?php echo $d['id']; ?>"type="button" class="btn btn-danger">HAPUS</a>
+                                <a href="edit.php?id=<?php echo $d['id']; ?>"type="button" class="btn btn-success">Edit</a>
+                                <a href="delete.php?id=<?php echo $d['id']; ?>"type="button" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                         <?php
